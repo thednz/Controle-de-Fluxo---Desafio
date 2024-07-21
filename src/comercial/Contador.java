@@ -6,8 +6,10 @@ public class Contador {
         @SuppressWarnings("resource")
         Scanner terminal = new Scanner(System.in);
         System.out.println("Digite o primeiro parâmetro:");
+        // setando o scanner para ler o int requerido
         int parametroUm = terminal.nextInt();
         System.out.println("Digite o segundo parâmetro:");
+        // setando o scanner para ler o int requerida (aqui a mesma coisa!)
         int parametroDois = terminal.nextInt();
         
         try {
@@ -27,7 +29,7 @@ public class Contador {
         }
 
         int contagem = parametroDois - parametroUm;
-        // Realizar o for para imprimir os números com base na variável contagem
+        // O for está bem aqui!
         for (int i = 1; i <= contagem; i++) {
             System.out.println("Imprimindo o número " + i);
         }
